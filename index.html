@@ -19,8 +19,8 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="#areas">Areas</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             <li class="nav-item ms-lg-3"><a class="btn btn-coral btn-sm" href="#contact">Request a consultation <span aria-hidden="true">→</span></a></li>
@@ -76,7 +76,7 @@
       </div>
     </section>
 
-    <section class="process section-pad">
+    <section class="process section-pad" id="process">
       <div class="container-fluid page-shell"><p class="section-label light">Process</p><h2>Simple to start.<br>Reliable from day one.</h2><div class="row g-0 process-grid">
         <div class="col-md-4 process-step"><span>01</span><div><h3>Walkthrough</h3><p>We visit your property, assess needs, and align on priorities.</p></div></div>
         <div class="col-md-4 process-step"><span>02</span><div><h3>Custom plan</h3><p>You receive a clear scope and timeline built around your property.</p></div></div>
@@ -84,8 +84,25 @@
       </div></div>
     </section>
 
-    <section class="areas section-pad" id="areas">
-      <div class="container-fluid page-shell"><p class="section-label">Service areas</p><h2>Local knowledge, across Miami.</h2><div class="area-list" aria-label="Service areas"><span>Coral Gables</span><i>/</i><span>Coconut Grove</span><i>/</i><span>Miami Beach</span><i>/</i><span>Bal Harbour</span><i>/</i><span>Sunny Isles</span><i>/</i><span>Golden Beach</span><i>/</i><span>Aventura</span><i>/</i><span>Miami</span></div></div>
+    <section class="areas" id="areas">
+      <div class="container-fluid page-shell areas-layout">
+        <div class="areas-intro">
+          <div><p class="section-label light">Service areas</p><h2>Local knowledge,<br><em>across</em> Miami.</h2><div class="accent-line"></div><p>From waterfront estates to high-rise residences, our team is already nearby.</p></div>
+          <p class="areas-availability"><span aria-hidden="true">⌖</span> Serving Miami-Dade <i>•</i> 24 / 7 / 365</p>
+        </div>
+        <div class="areas-map" aria-hidden="true">
+          <svg viewBox="0 0 620 720" role="img" aria-label="Abstract map of the Miami coastline and service area">
+            <defs><pattern id="water-lines" width="20" height="14" patternUnits="userSpaceOnUse"><path d="M0 7 Q5 3 10 7 T20 7" fill="none" stroke="currentColor" stroke-width="1"/></pattern></defs>
+            <rect width="620" height="720" fill="url(#water-lines)" opacity=".14"/>
+            <path class="map-land" d="M0 0h340c-10 66-25 102-7 153 20 56-19 96-7 143 12 49 55 60 32 123-22 61-3 95-17 144-13 47 5 97-27 157H0Z"/>
+            <path class="map-coast" d="M340 0c-10 66-25 102-7 153 20 56-19 96-7 143 12 49 55 60 32 123-22 61-3 95-17 144-13 47 5 97-27 157"/>
+            <path class="map-route" d="M382 76c-45 70-6 124-34 188-23 52 18 104-4 159-19 49 2 92-20 151"/>
+            <g class="map-markers"><g transform="translate(369 105)"><circle r="18"/><text>07</text></g><g transform="translate(354 182)"><circle r="18"/><text>06</text></g><g transform="translate(348 259)"><circle r="18"/><text>05</text></g><g transform="translate(364 337)"><circle r="18"/><text>04</text></g><g class="active" transform="translate(346 414)"><circle r="24"/><text>03</text></g><g transform="translate(327 492)"><circle r="18"/><text>02</text></g><g transform="translate(309 572)"><circle r="18"/><text>01</text></g><g transform="translate(265 645)"><circle r="18"/><text>08</text></g></g>
+            <g class="map-label" transform="translate(380 380)"><path d="M0 34l-17 12 17 4"/><rect width="182" height="70"/><text x="22" y="30">Miami Beach</text><text class="map-label-sub" x="22" y="51">COASTAL SERVICE AREA</text></g>
+          </svg>
+        </div>
+        <ol class="area-index" aria-label="Service areas"><li><span>01</span>Coral Gables</li><li><span>02</span>Coconut Grove</li><li class="is-active"><span>03</span>Miami Beach</li><li><span>04</span>Bal Harbour</li><li><span>05</span>Sunny Isles</li><li><span>06</span>Golden Beach</li><li><span>07</span>Aventura</li><li><span>08</span>Miami</li></ol>
+      </div>
     </section>
 
     <section class="contact section-pad" id="contact">
