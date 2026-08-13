@@ -389,7 +389,6 @@ body {
 }
 
 .areas {
-    background-color: var(--limestone);
     background-image: radial-gradient(rgba(13, 39, 57, .07) .7px, transparent .7px);
     background-size: 6px 6px
 }
@@ -486,6 +485,10 @@ footer p {
 }
 
 @media(max-width:991.98px) {
+    html {
+        scroll-padding-top: 74px
+    }
+
     .navbar {
         min-height: 74px
     }
@@ -586,14 +589,34 @@ footer p {
 }
 
 @media(max-width:575.98px) {
+    .site-header .page-shell {
+        padding-inline: .75rem
+    }
+
+    .site-header .brand {
+        gap: 6px;
+        margin-right: .5rem
+    }
+
     .brand-logo {
-        width: 42px;
-        height: 42px;
-        flex-basis: 42px
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px
+    }
+
+    .brand-mia {
+        font-size: 1.65rem
+    }
+
+    .brand-slash {
+        font-size: 1.45rem
     }
 
     .brand-name {
-        display: none
+        display: inline;
+        font-size: .58rem;
+        letter-spacing: .1em;
+        white-space: nowrap
     }
 
     .hero h1 {
@@ -632,7 +655,6 @@ footer {
 }
 
 .areas {
-    background: var(--limestone);
     background-image: none
 }
 
